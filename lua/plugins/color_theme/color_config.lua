@@ -1,0 +1,173 @@
+-- ADD CONFIG TO ONEDARK THEME
+
+return {
+  -- {
+  --   "onedark.nvim",
+  --   -- name = "onedark",
+  --   opts = {
+  --     -- Main options --
+  --     style = "warmer",                                                                    -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+  --     transparent = false,                                                                 -- Show/hide background
+  --     term_colors = true,                                                                  -- Change terminal color as per the selected theme style
+  --     cmp_itemkind_reverse = false,                                                        -- reverse item kind highlights in cmp menu
+  --     -- toggle theme style ---
+  --     toggle_style_key = "ui",                                                             -- keybind to toggle theme style. Leave it nil to disable it, or set it to a string, for example "<leader>ts"
+  --     toggle_style_list = { "dark", "darker", "cool", "deep", "warm", "warmer", "light" }, -- List of styles to toggle between
+  --
+  --     -- Change code style ---
+  --     -- Options are italic, bold, underline, none
+  --     -- You can configure multiple style with comma separated, For e.g., keywords = 'italic,bold'
+  --     code_style = {
+  --       comments = "italic",
+  --       keywords = "none",
+  --       functions = "bold",
+  --       strings = "none",
+  --       variables = "italic",
+  --     },
+  --
+  --     -- Lualine options --
+  --     lualine = {
+  --       transparent = false, -- lualine center bar transparency
+  --     },
+  --
+  --     -- Custom Highlights --
+  --     colors = {}, -- Override default colors
+  --     highlights = {
+  --       NeoTreeDirectoryIcon = { fg = "#fcb603" },
+  --       NeoTreeDirectoryName = { fg = "#cccccc" },
+  --       
+  --     }, -- Override highlight groups
+  --
+  --     -- Plugins Config --
+  --     diagnostics = {
+  --       darker = false,     -- darker colors for diagnostic
+  --       undercurl = false,  -- use undercurl instead of underline for diagnostics
+  --       background = false, -- use background color for virtual text
+  --     },
+  --   },
+  --   --require('onedark').load(),
+  -- },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   priority = 1000,
+  --   config = function()
+  --     require("catppuccin").setup({
+  --       background = {
+  --         light = "latte",
+  --         dark = "mocha",
+  --       },
+  --       transparent_background = false, -- disables setting the background color.
+  --       show_end_of_buffer = false,     -- shows the '~' characters after the end of buffers
+  --       term_colors = false,            -- sets terminal colors (e.g. `g:terminal_color_0`)
+  --       dim_inactive = {
+  --         enabled = false,              -- dims the background color of inactive window
+  --         shade = "dark",
+  --         percentage = 0.15,            -- percentage of the shade to apply to the inactive window
+  --       },
+  --       no_italic = false,              -- Force no italic
+  --       no_bold = false,                -- Force no bold
+  --       no_underline = false,           -- Force no underline
+  --       styles = {                      -- Handles the styles of general hi groups (see `:h highlight-args`):
+  --         comments = { "italic" },      -- Change the style of comments
+  --         conditionals = { "italic" },
+  --         loops = {},
+  --         functions = {},
+  --         keywords = {},
+  --         strings = {},
+  --         variables = {},
+  --         numbers = {},
+  --         booleans = { "bold" },
+  --         properties = {},
+  --         types = {},
+  --         operators = {},
+  --         -- miscs = {}, -- Uncomment to turn off hard-coded styles
+  --       },
+  --       color_overrides = {
+  --         -- macchiato = {
+  --         -- subtext1 = "#fcb603",
+  --         --
+  --         -- },
+  --         -- latte = {
+  --         --   rosewater = "#c14a4a",
+  --         --   flamingo = "#c14a4a",
+  --         --   red = "#c14a4a",
+  --         --   maroon = "#c14a4a",
+  --         --   pink = "#945e80",
+  --         --   mauve = "#945e80",
+  --         --   peach = "#c35e0a",
+  --         --   yellow = "#b47109",
+  --         --   green = "#6c782e",
+  --         --   teal = "#4c7a5d",
+  --         --   sky = "#4c7a5d",
+  --         --   sapphire = "#4c7a5d",
+  --         --   blue = "#45707a",
+  --         --   lavender = "#45707a",
+  --         --   text = "#654735",
+  --         --   subtext1 = "#73503c",
+  --         --   subtext0 = "#805942",
+  --         --   overlay2 = "#8c6249",
+  --         --   overlay1 = "#8c856d",
+  --         --   overlay0 = "#a69d81",
+  --         --   surface2 = "#bfb695",
+  --         --   surface1 = "#d1c7a3",
+  --         --   surface0 = "#e3dec3",
+  --         --   base = "#f9f5d7",
+  --         --   mantle = "#f0ebce",
+  --         --   crust = "#e8e3c8",
+  --         -- },
+  --         all = {
+  --           rosewater = "#ea6962",
+  --           flamingo = "#ea6962",
+  --           red = "#ea6962",
+  --           maroon = "#ea6962",
+  --           pink = "#d3869b",
+  --           mauve = "#d3869b",
+  --           peach = "#e78a4e",
+  --           yellow = "#d8a657",
+  --           green = "#a9b665",
+  --           teal = "#89b482",
+  --           sky = "#89b482",
+  --           sapphire = "#fcb603", --"#89b482",
+  --           blue = "#7daea3",
+  --           lavender = "#7daea3",
+  --           text = "#ebdbb2",
+  --           subtext1 = "#d5c4a1",
+  --           subtext0 = "#bdae93",
+  --           overlay2 = "#a89984",
+  --           overlay1 = "#928374",
+  --           overlay0 = "#595959",
+  --           surface2 = "#4d4d4d",
+  --           surface1 = "#404040",
+  --           surface0 = "#292929",
+  --           base = "#1d2021",
+  --           mantle = "#191b1c",
+  --           crust = "#141617",
+  --         },
+  --       },
+  --       highlights_overrides = {
+  --         macchiato = function(colors)
+  --           return {
+  --             NeoTreeDirectoryIcon = { fg = colors.sapphire },
+  --             -- NeoTreeDirectoryName = { fg = colors.subtext1 },
+  --             -- NeoTreeNormal = { bg = colors.mantle }
+  --           }
+  --         end
+  --       },
+
+  --       default_integrations = false,
+  --       integrations = {
+  --         cmp = true,
+  --         gitsigns = false,
+  --         neotree = true,
+  --         treesitter = true,
+  --         notify = true,
+  --         treesitter_context = true,
+  --       },
+  --     })
+
+  --     -- setup must be called before loading
+  --     vim.api.nvim_command("colorscheme catppuccin")
+  --   end,
+  -- },
+}

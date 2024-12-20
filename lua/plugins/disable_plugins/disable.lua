@@ -1,0 +1,16 @@
+return {
+  { "catppuccin",                   enabled = false },
+  { "tokyonight.nvim",              enabled = false },
+  { "ts-comments.nvim",             enabled = false },
+  { "dashboard-nvim",               enabled = false },
+  { "gitsigns.nvim",                enabled = false },
+  { "luvit-meta",                   enabled = false },
+  { "nvim-snippets",                enabled = false },
+  { "nvim-ts-autotag",              enabled = false },
+  { "folke/flash.nvim",             enabled = false },
+  { "nvim-treesitter-textobjects",  enabled = false },
+  { "mini.ai",                      enabled = false },
+  { "mini.pairs",                   enabled = false },
+  { "mini.icons",                   enabled = false },
+  { "nvim-neo-tree/neo-tree.nvim",  enabled = false },
+}
